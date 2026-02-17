@@ -1,0 +1,16 @@
+<body>
+    <script>
+        class fwd{
+            greetings(){
+                return "Hello, welcome to JavaScript inheritance!";
+            }
+        }
+        class html extends fwd{
+            topic(){
+                return super.greetings()+"Inheritance in JavaScript";
+            }
+        }
+        let obj=new html();
+        document.writeln(obj.topic());
+    </script>
+</body>

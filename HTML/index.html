@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Attendance Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📘 Student Attendance Management System</h1>
+
+<div class="card">
+    <h2>Add Student</h2>
+    <input type="number" id="rollNumber" placeholder="Enter roll number">
+    <input type="text" id="studentName" placeholder="Enter student name">
+    <button onclick="addStudent()">Add Student</button>
+</div>
+
+
+    <!-- Attendance -->
+    <div class="card">
+        <h2>Mark Attendance</h2>
+        <input type="date" id="attendanceDate">
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable"></tbody>
+        </table>
+        <button onclick="saveAttendance()">Save Attendance</button>
+    </div>
+
+    <!-- Summary -->
+    <div class="card">
+        <h2>Attendance Summary</h2>
+        <div id="summary"></div>
+        <button class="danger" onclick="clearData()">Clear All Data</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

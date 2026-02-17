@@ -1,0 +1,12 @@
+<body>
+    <script>
+        let numbers=[10,20,30,40,50];
+        let n1=numbers.map(a=>a+5);
+        document.writeln("Original Array: "+numbers+"<br>");
+        document.writeln("New Array: "+n1);
+        let n2=numbers.filter(a=>a>25);
+        document.writeln("<br>Filtered Array: "+n2);
+        let n3=numbers.reduce((a,b)=>a+b,0);
+        document.writeln("<br>Sum of all elements: "+n3);
+    </script>   
+</body>

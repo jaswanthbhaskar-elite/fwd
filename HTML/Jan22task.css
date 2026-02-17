@@ -1,0 +1,18 @@
+*{
+    background-color: rgb(248, 139, 175);
+    color: white;
+    font-family: Times New Roman;
+    text-align: center;
+}
+ol{
+    list-style-position: inside;
+    padding-left: 0;
+}
+li{
+    text-align: left;
+    width: 200px;
+    margin: 0 auto;
+}
+hr{
+    width: 350;
+}
